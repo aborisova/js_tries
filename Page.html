@@ -31,9 +31,31 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="about_main">
-                     <div class="about_taital">About company</div>
-                     <p class="about_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-                     <div class="about_bt"><a href="#">About More</a></div>
+                     <div class="about_taital">Enter your budget</div>
+                     <label for="fname">Budget:</label>
+                     <input type="number" id="budget_id" name="budget" autofocus="true" min="0">
+                     <button class="button button1" placeholder="200" type="button" onclick="calculate()">Calculate</button>
+                  </div>
+                  <div hidden id="result">
+                     <table>
+                        <tr>
+                          <td>You spent:</td>
+                          <td id="spent"></td>
+                        </tr>
+                        <tr>
+                           <td>Including tax:</td>
+                           <td id="tax"></td>
+                         </tr>
+                        <tr>
+                          <td>Number of phones:</td>
+                          <td id="phones"></td>
+                        </tr>
+                      
+                      <tr>
+                        <td>Number of accesories:</td>
+                        <td id="accesories"></td>
+                      </tr>
+                     </table>
                   </div>
                </div>
                <div class="col-md-6">
@@ -42,6 +64,6 @@
             </div>
          </div>
       </div>
-	<script src="js/custom.js"></script>
+	<script src="js/phone.js"></script>
 </body>
 </html>
