@@ -55,7 +55,7 @@ function calculatePhones(bank_balance){
 		}
 	}
 
-	let tax = spentAmount - number_of_goods * PHONE_PRICE - number_of_accesories * number_of_accesories;
+	let tax = spentAmount - number_of_goods * PHONE_PRICE - number_of_accesories * ACCESSORY_PRICE;
 	return {
 		spentAmount: spentAmount,
 		number_of_goods: number_of_goods,
